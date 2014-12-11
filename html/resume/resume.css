@@ -1,0 +1,54 @@
+/* BASIC RESET */
+
+body {
+    background-color: rgb(180, 180, 180);
+    color: grey;
+    font-size: 20px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+header {
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+}
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+    margin: 0;
+    padding: 0;
+}
+.arc path {
+  stroke: #fff;
+}
+.home-title {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: #eeeeee 0px 0px 10px;
+}
+.content {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tech-bg-chart-pie{
+    width:800px;
+    height: 500px;
+}
+.beian {
+    position: absolute;
+    left: 40%;
+    bottom: 15px;
+    color: gray;
+    font-size: 22px;
+    font-weight: 500;
+}
