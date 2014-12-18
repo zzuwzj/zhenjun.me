@@ -1,0 +1,12 @@
+html {
+  font - family: "Helvetica Neue", Helvetica, Roboto, Arial, sans - serif;
+  font - family: proxima - nova, "Helvetica Neue", Helvetica, Roboto, Arial, sans - serif;
+  color: #484848;line-height:1.28}p{margin:0 0 10px}.subHeader{font-size:21px;font-weight:200;line-height:30px;margin-bottom:10px}em{font-style:italic}h1,h2,h3,h4,h5,h6{margin:10px 0;font-family:inherit;font-weight:bold;line-height:20px;color:inherit;text-rendering:optimizelegibility}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;color:# 7 b7b7b
+}
+.wrap {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
