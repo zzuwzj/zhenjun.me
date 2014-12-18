@@ -1,19 +1,74 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta chartset="utf-8">
-    <title>Page Title</title>
+    <title>React Sample - by Wang, Zhenjun</title>
     <link rel="stylesheet" href="css/common.css">
-    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/react.min.js"></script>
+    <script type="text/javascript" src="js/JSXTransformer.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="nav-main"></div>
-        <div class="hero"></div>
-        <section class="content"></section>
+        <div class="nav-main">
+            <div class="wrap">
+                <a href="../../index.html" class="nav-home">Zhenjun</a>
+                <ul class="nav-site">
+                    <li><a href="http://github.com/zzuwzj">github</a>
+                    </li>
+                    <li><a href="html/about.html">show</a>
+                    </li>
+                    <li><a href="html/about.html">docs</a>
+                    </li>
+                    <li><a href="html/about.html">contact</a>
+                    </li>
+                    <li><a href="html/about.html">about</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div id="hello"></div>
+            <div id="timer"></div>
+        </div>
+        <section class="content">
+        </section>
         <footer></footer>
     </div>
+    <!--<script type="text/jsx" src="js/common.js"></script>-->
+    <script type="text/jsx">
+        var HelloMessage = React.createClass({
+          render: function() {
+            return <div class>Hello {this.props.name}</div>;
+          }
+        });
+
+        React.render(<HelloMessage name="Vistor" />, document.getElementById('hello'));
+
+        var Timer = React.createClass({
+          getInitialState: function() {
+            return {secondsElapsed: 0};
+          },
+          tick: function() {
+            this.setState({secondsElapsed: this.state.secondsElapsed + 1});
+          },
+          componentDidMount: function() {
+            this.interval = setInterval(this.tick, 1000);
+          },
+          componentWillUnmount: function() {
+            clearInterval(this.interval);
+          },
+          render: function() {
+            return (
+              <div>You have stayed here: {this.state.secondsElapsed} seconds</div>
+            );
+          }
+        });
+
+        React.render(<Timer />, document.getElementById('timer'));
+    </script>
 </body>
 
 </html>
