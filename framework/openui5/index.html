@@ -2,18 +2,29 @@
 <html>
 
 <head>
-    <meta chartset="utf-8">
-    <title>OpenUI5 Sample - by Wang, Zhenjun</title>
-    <script type="text/javascript" src="js/common.js"></script>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <title>Hello World</title>
+
+    <script id='sap-ui-bootstrap' src='resources/sap-ui-core.js' data-sap-ui-theme='sap_bluecrystal' data-sap-ui-libs='sap.m'>
+    </script>
+
+    <link rel="stylesheet/less" type="text/css" href="css/common.less">
+    <script src="js/less.min.js" type="text/javascript"></script>
+
+    <script>
+    var btn = new sap.m.Button({
+        text: 'Press me!',
+        press: function() {
+            alert("Hello!")
+        }
+    });
+    btn.placeAt('content');
+    </script>
+
 </head>
 
-<body>
-    <div class="container">
-        <div class="nav-main"></div>
-        <div class="hero"></div>
-        <section class="content"></section>
-        <footer></footer>
-    </div>
+<body class='sapUiBody'>
+    <div id='content'></div>
 </body>
 
 </html>
