@@ -1,0 +1,11 @@
+[DEFAULT]
+
+BASEURL=http://www.quanmama.com?utm_source=desktop
+
+[InternetShortcut]
+
+URL=http://www.quanmama.com?utm_source=desktop
+
+IconFile=http://www.quanmama.com/images/favicon.ico
+IconIndex=1
+HotKey=836
