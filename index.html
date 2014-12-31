@@ -1,64 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>zhenjun - a code monkey's website</title>
-    <link rel="stylesheet" href="css\common.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/cloud.ico">
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/common.css" rel="stylesheet">
+
+    <title>zhenjun.me - a code monkey's website - enjoy</title>
 </head>
 
 <body>
-    <header>
-        <a href="http://zzuwzj.github.io/helloworld"><img src="images\monkey.png"></img>
-        </a>
-        <span class="home-title">ZHENJUN.ME</span>
+    <header class="headroom header--fixed zj-slide">
+        <div class="menu-toggle toggle-right navbar-icon-right">
+            <div class="line top" style='background-color: black'></div>
+            <div class="line middle" style='background-color: black'></div>
+            <div class="line bottom" style='background-color: black'></div>
+        </div>
+        <a href="/">ZHENJUN</a>
     </header>
-    <div id="wrapper">
-        <div id="content">
-            <nav>
-                <ul id="appleNav">
-                    <li>
-                        <a href="index.html" title="Home"><img src="images\monkey24.png" alt="Monkey Logo" />
-                        </a>
-                    </li>
-                    <li><a href="html\resume\resume.html" title="Resume">Resume</a>
-                    </li>
-                    <li><a href="framework\index.html" title="React">Frameworks</a>
-                    </li>
-                    <li><a href="html\fun\round-rect.html" title="RoundRect">Round Rect</a>
-                    </li>
-                    <li><a href="html\fun\round-rect.html" title="RoundRect">Round Rect</a>
-                    </li>
-                    <li><a href="html\fun\round-rect.html" title="RoundRect">Round Rect</a>
-                    </li>
-                    <li><a href="html\fun\round-rect.html" title="RoundRect">Round Rect</a>
-                    </li>
-                    <li><a href="html\fun\round-rect.html" title="RoundRect">Round Rect</a>
-                    </li>
-                    <li>
-                        <form>
-                            <input type="text" />
-                        </form>
-                    </li>
-                </ul>
-            </nav>
+    <div id="zj-site">
+        <div class="container">
+            <!-- Cover -->
+            <div class="row" style="margin-right: 0">
+                <div class="col-md-12 cover" style="height:1075px">
+                    <div style="z-index: 1;position:relative;">
+                        <div class="menu-toggle toggle-right navbar-icon-right">
+                            <div class="line top"></div>
+                            <div class="line middle"></div>
+                            <div class="line bottom"></div>
+                        </div>
+                        <a href="/">ZHENJUN</a>
+                    </div>
+                    <div class='cover-home'>
+                        <div class='cover-text' data-center="opacity: 1" data-106-top="opacity: 0">
+                            <h1 class='cover-name'>Wang, Zhenjun</h1>
+                            <h6 class='cover-subtitle'>A code monkey, running to be a full-stack developer<div class='underline'></div>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class='learn-more animate'>
+                        <p class='label1'>LEARN MORE</p>
+                        <img alt="Ic arrow down@2x" src="/images/down.png" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="code-block">
-        int main()
-        </br>
-        </br>
-        {
-        </br>
-        </br>
-        <span class="code-core">printf("Hello World!");</span>
-        </br>
-        </br>
-        }
-    </div>
-    <footer>
-        <a class="beian" href="http://www.miitbeian.gov.cn/">沪ICP备14050667号</a>
-    </footer>
+
+    <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>
